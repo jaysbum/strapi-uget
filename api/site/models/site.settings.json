@@ -1,0 +1,44 @@
+{
+  "kind": "singleType",
+  "collectionName": "sites",
+  "info": {
+    "name": "site",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "facebook": {
+      "type": "string"
+    },
+    "line": {
+      "type": "string"
+    },
+    "wechat": {
+      "type": "string"
+    },
+    "logo": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

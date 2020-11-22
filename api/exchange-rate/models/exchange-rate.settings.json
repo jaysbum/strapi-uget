@@ -1,0 +1,17 @@
+{
+  "kind": "singleType",
+  "collectionName": "exchange_rates",
+  "info": {
+    "name": "exchangeRate"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "value": {
+      "type": "decimal"
+    }
+  }
+}

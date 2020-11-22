@@ -1,0 +1,56 @@
+{
+  "kind": "collectionType",
+  "collectionName": "promotions",
+  "info": {
+    "name": "promotion",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "start": {
+      "type": "date"
+    },
+    "end": {
+      "type": "date"
+    },
+    "amount": {
+      "type": "decimal"
+    },
+    "name": {
+      "type": "string"
+    },
+    "supply": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "shipping": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "delivery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "service": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "point": {
+      "type": "integer"
+    },
+    "gift": {
+      "type": "string"
+    },
+    "active": {
+      "type": "boolean"
+    }
+  }
+}

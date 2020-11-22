@@ -1,0 +1,42 @@
+{
+  "collectionName": "components_rate_rates",
+  "info": {
+    "name": "rate",
+    "icon": "sliders-h",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "min": {
+      "type": "decimal"
+    },
+    "max": {
+      "type": "decimal"
+    },
+    "value": {
+      "type": "decimal"
+    },
+    "calculateType": {
+      "type": "enumeration",
+      "enum": [
+        "weight",
+        "volume",
+        "price",
+        "shop",
+        "item"
+      ]
+    },
+    "mode": {
+      "type": "integer"
+    },
+    "valuePickup": {
+      "type": "decimal"
+    },
+    "valueSplit": {
+      "type": "decimal"
+    },
+    "valueCompound": {
+      "type": "decimal"
+    }
+  }
+}

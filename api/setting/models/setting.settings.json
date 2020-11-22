@@ -1,0 +1,69 @@
+{
+  "kind": "singleType",
+  "collectionName": "settings",
+  "info": {
+    "name": "setting",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "shippingType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.list"
+    },
+    "calculateType": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.list"
+    },
+    "supplyRate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rate.rate"
+    },
+    "exchangeRate": {
+      "type": "decimal"
+    },
+    "markupRate": {
+      "type": "decimal"
+    },
+    "insuranceRate": {
+      "type": "decimal"
+    },
+    "deliveryProvider": {
+      "type": "component",
+      "repeatable": true,
+      "component": "list.list"
+    },
+    "shippingRate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rate.rate"
+    },
+    "deliveryRate": {
+      "type": "component",
+      "repeatable": true,
+      "component": "rate.rate"
+    },
+    "defaultDiscountRate": {
+      "type": "decimal"
+    },
+    "vat": {
+      "type": "decimal"
+    },
+    "serviceChargeRate": {
+      "type": "decimal"
+    },
+    "serviceChargeFrom": {
+      "type": "decimal"
+    },
+    "serviceChargeLimit": {
+      "type": "decimal"
+    }
+  }
+}

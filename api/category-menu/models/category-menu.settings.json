@@ -1,0 +1,31 @@
+{
+  "kind": "collectionType",
+  "collectionName": "category_menus",
+  "info": {
+    "name": "category-menu",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "submenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu"
+    },
+    "recommended": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.recommended"
+    },
+    "icon": {
+      "type": "string"
+    }
+  }
+}

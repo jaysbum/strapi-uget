@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/markup",
+      "handler": "markup.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/markup",
+      "handler": "markup.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/markup",
+      "handler": "markup.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

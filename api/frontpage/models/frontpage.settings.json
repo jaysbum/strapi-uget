@@ -1,0 +1,19 @@
+{
+  "kind": "singleType",
+  "collectionName": "frontpages",
+  "info": {
+    "name": "frontpage"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "slideshows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "widgets.slideshows"
+    }
+  }
+}

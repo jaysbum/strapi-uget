@@ -1,0 +1,28 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/exchange-rate",
+      "handler": "exchange-rate.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/exchange-rate",
+      "handler": "exchange-rate.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/exchange-rate",
+      "handler": "exchange-rate.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

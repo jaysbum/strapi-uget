@@ -1,0 +1,54 @@
+{
+  "kind": "collectionType",
+  "collectionName": "addresses",
+  "info": {
+    "name": "address",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": false
+  },
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "address": {
+      "type": "string"
+    },
+    "subDistrict": {
+      "type": "string"
+    },
+    "district": {
+      "type": "string"
+    },
+    "province": {
+      "type": "string"
+    },
+    "zipcode": {
+      "type": "string"
+    },
+    "email": {
+      "type": "string"
+    },
+    "mobile": {
+      "type": "string"
+    },
+    "user": {
+      "type": "string"
+    },
+    "tax_id": {
+      "type": "string"
+    },
+    "tax_name": {
+      "type": "string"
+    },
+    "tax_address": {
+      "type": "string"
+    },
+    "tax": {
+      "type": "boolean"
+    }
+  }
+}

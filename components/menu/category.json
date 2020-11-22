@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_menu_categories",
+  "info": {
+    "name": "category",
+    "icon": "align-center"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "submenu": {
+      "type": "component",
+      "repeatable": true,
+      "component": "menu.menu"
+    },
+    "banner": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

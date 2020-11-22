@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_menu_recommendeds",
+  "info": {
+    "name": "recommended",
+    "icon": "check-circle"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "provider": {
+      "type": "enumeration",
+      "enum": [
+        "taobao"
+      ]
+    },
+    "itemId": {
+      "type": "biginteger"
+    },
+    "price": {
+      "type": "decimal"
+    },
+    "promoPrice": {
+      "type": "decimal"
+    }
+  }
+}

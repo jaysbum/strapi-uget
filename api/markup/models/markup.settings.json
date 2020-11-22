@@ -1,0 +1,34 @@
+{
+  "kind": "singleType",
+  "collectionName": "markups",
+  "info": {
+    "name": "markup"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "supply": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "delivery": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "service": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    },
+    "shipping": {
+      "type": "component",
+      "repeatable": false,
+      "component": "rate.markup"
+    }
+  }
+}

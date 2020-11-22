@@ -1,0 +1,58 @@
+{
+  "kind": "collectionType",
+  "collectionName": "banks",
+  "info": {
+    "name": "bank",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "icon": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    },
+    "bank_name": {
+      "type": "string"
+    },
+    "branch_name": {
+      "type": "string"
+    },
+    "account_name": {
+      "type": "string"
+    },
+    "account_number": {
+      "type": "string"
+    },
+    "mode1": {
+      "type": "boolean"
+    },
+    "mode2": {
+      "type": "boolean"
+    },
+    "active": {
+      "type": "boolean"
+    },
+    "qr": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false
+    }
+  }
+}

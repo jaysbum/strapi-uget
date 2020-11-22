@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "categories",
+  "info": {
+    "name": "category",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "cat_id": {
+      "type": "string"
+    },
+    "parent_id": {
+      "type": "string"
+    },
+    "cat_layer": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "keyword": {
+      "type": "string"
+    },
+    "markup": {
+      "type": "string"
+    }
+  }
+}
